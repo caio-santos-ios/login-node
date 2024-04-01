@@ -1,0 +1,65 @@
+@tailwind utilities;
+
+:root {
+    --btn-color: #79451d;
+}
+
+@layer utilities {
+    .section_form {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .form {
+        display: flex;
+        flex-flow: column;
+        gap: 1.5rem;
+        padding: 1rem;
+        width: 100%;
+        max-width: 30rem;
+    }
+
+    .title_form {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+    }
+    
+    .label_form {
+        border: 0.01rem solid var(--primary-color);
+        border-radius: 0.5rem;
+        color: var(--secundary-color);
+        position: relative;
+        width: 100%;
+    }
+    
+    .title_label_form {
+        position: absolute;
+        bottom: 2.8rem;
+        left: 1rem;
+        padding: 0 0.5rem;
+        background-color: white;
+        color: var(--primary-color);
+    }
+    
+    .input_form {
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+    
+    .input_form::placeholder { 
+        font-size: 1rem;
+    }
+    
+    .btn_form {
+        background-color: var(--btn-color);
+        padding: 1rem;
+        color: var(--primary-color);
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+}
